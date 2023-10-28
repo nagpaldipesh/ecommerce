@@ -23,7 +23,7 @@ export default function App() {
             >
               <div className="container">
                 <figure
-                  className="slide-image floating-item   "
+                  className="slide-image floating-item slide-animateNOT"
                   data-animation-options="{
                                     'name': 'fadeInDownShorter', 'duration': '1s'
                                 }"
@@ -39,7 +39,7 @@ export default function App() {
                 </figure>
                 <div className="banner-content text-right y-50 ml-auto">
                   <h5
-                    className="banner-subtitle text-uppercase font-weight-bold mb-2   "
+                    className="banner-subtitle text-uppercase font-weight-bold mb-2 slide-animateNOT"
                     data-animation-options="{
                                         'name': 'fadeInUpShorter', 'duration': '1s'
                                     }"
@@ -47,7 +47,7 @@ export default function App() {
                     Deals And Promotions
                   </h5>
                   <h3
-                    className="banner-title ls-25 mb-6   "
+                    className="banner-title ls-25 mb-6 slide-animateNOT"
                     data-animation-options="{
                                         'name': 'fadeInUpShorter', 'duration': '1s'
                                     }"
@@ -57,7 +57,7 @@ export default function App() {
                   </h3>
                   <a
                     href="shop-banner-sidebar.html"
-                    className="btn btn-dark btn-outline btn-rounded btn-icon-right   "
+                    className="btn btn-dark btn-outline btn-rounded btn-icon-right slide-animateNOT"
                     data-animation-options="{
                                         'name': 'fadeInUpShorter', 'duration': '1s'
                                     }"
@@ -80,7 +80,7 @@ export default function App() {
             >
               <div className="container">
                 <figure
-                  className="slide-image floating-item   "
+                  className="slide-image floating-item slide-animateNOT"
                   data-animation-options="{
                                     'name': 'fadeInUpShorter', 'duration': '1s'
                                 }"
@@ -96,7 +96,7 @@ export default function App() {
                 </figure>
                 <div className="banner-content y-50">
                   <h5
-                    className="banner-subtitle text-uppercase font-weight-bold mb-2   "
+                    className="banner-subtitle text-uppercase font-weight-bold mb-2 slide-animateNOT"
                     data-animation-options="{
                                         'name': 'fadeInRightShorter', 'duration': '1s', 'delay': '.5s'
                                     }"
@@ -104,7 +104,7 @@ export default function App() {
                     News And Inspiration
                   </h5>
                   <h3
-                    className="banner-title ls-25 mb-2 text-uppercase lh-1   "
+                    className="banner-title ls-25 mb-2 text-uppercase lh-1 slide-animateNOT"
                     data-animation-options="{
                                         'name': 'fadeInRightShorter', 'duration': '1s', 'delay': '.7s'
                                     }"
@@ -112,7 +112,7 @@ export default function App() {
                     Natural Sound
                   </h3>
                   <div
-                    className="banner-price-info font-weight-bold text-dark ls-25   "
+                    className="banner-price-info font-weight-bold text-dark ls-25 slide-animateNOT"
                     data-animation-options="{
                                         'name': 'fadeInRightShorter', 'duration': '1s', 'delay': '.9s'
                                     }"
@@ -123,7 +123,7 @@ export default function App() {
                     </span>
                   </div>
                   <p
-                    className="font-weight-normal text-default ls-25   "
+                    className="font-weight-normal text-default ls-25 slide-animateNOT"
                     data-animation-options="{
                                         'name': 'fadeInRightShorter', 'duration': '1s', 'delay': '1.1s'
                                     }"
@@ -132,7 +132,7 @@ export default function App() {
                   </p>
                   <a
                     href="shop-banner-sidebar.html"
-                    className="btn btn-dark btn-outline btn-rounded btn-icon-right   "
+                    className="btn btn-dark btn-outline btn-rounded btn-icon-right slide-animateNOT"
                     data-animation-options="{
                                         'name': 'fadeInRightShorter', 'duration': '1s', 'delay': '1.3s'
                                     }"
@@ -155,7 +155,7 @@ export default function App() {
             >
               <div className="container">
                 <figure
-                  className="slide-image floating-item   "
+                  className="slide-image floating-item slide-animateNOT"
                   data-animation-options="{
                                     'name': 'fadeInRightShorter', 'duration': '1s'
                                 }"
@@ -171,7 +171,7 @@ export default function App() {
                 </figure>
                 <div className="banner-content y-50">
                   <h5
-                    className="banner-subtitle text-uppercase font-weight-bold   "
+                    className="banner-subtitle text-uppercase font-weight-bold slide-animateNOT"
                     data-animation-options="{
                                         'name': 'fadeInRightShorter', 'duration': '1s'
                                     }"
@@ -179,7 +179,7 @@ export default function App() {
                     Top Monthly Seller
                   </h5>
                   <h4
-                    className="banner-title ls-25   "
+                    className="banner-title ls-25 slide-animateNOT"
                     data-animation-options="{
                                         'name': 'fadeInRightShorter', 'duration': '1s'
                                     }"
@@ -188,7 +188,7 @@ export default function App() {
                     <span className="text-primary">Smart LED</span> TV
                   </h4>
                   <p
-                    className="font-weight-normal text-dark   "
+                    className="font-weight-normal text-dark slide-animateNOT"
                     data-animation-options="{
                                         'name': 'fadeInRightShorter', 'duration': '1s'
                                     }"
@@ -197,7 +197,7 @@ export default function App() {
                   </p>
                   <a
                     href="shop-banner-sidebar.html"
-                    className="btn btn-dark btn-outline btn-rounded btn-icon-right   "
+                    className="btn btn-dark btn-outline btn-rounded btn-icon-right slide-animateNOT"
                     data-animation-options="{
                                         'name': 'fadeInRightShorter', 'duration': '1s'
                                     }"
