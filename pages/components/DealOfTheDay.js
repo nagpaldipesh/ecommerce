@@ -1,7 +1,63 @@
-import React from 'react'
+import React, { useState } from 'react'
 import ProductCard from './ProductCard'
 
 export default function DealOfTheDay() {
+
+    const deals = [
+        {
+            name: "Purse",
+            rating: 4,
+            newPrice: 150,
+            oldPrice: 199,
+            imageUrl: "assets/images/demos/demo2/products/1-2.jpg",
+            newTag: true,
+            discount: 80,
+            reviewsCount: 4,
+          },
+          {
+            name: "Shoes",
+            rating: 4.5,
+            newPrice: 56,
+            oldPrice: 70,
+            imageUrl: "assets/images/demos/demo2/products/4-3.jpg",
+            imageUrl2: "assets/images/demos/demo2/products/1-3-2.jpg",
+            newTag: true,
+            discount: 0,
+            reviewsCount: 2,
+          },
+          {
+            name: "Travel Bag",
+            rating: 3,
+            newPrice: 39,
+            oldPrice: 69,
+            imageUrl: "assets/images/demos/demo2/products/4-1-1.jpg",
+            newTag: false,
+            discount: 15,
+            reviewsCount: 25,
+          },
+          {
+            name: "Drone",
+            rating: 4,
+            newPrice: 210,
+            oldPrice: 260,
+            imageUrl: "assets/images/demos/demo2/products/3-3-1.jpg",
+            imageUrl2: "assets/images/demos/demo2/products/3-3-2.jpg",
+            newTag: false,
+            discount: 0,
+            reviewsCount: 3,
+          },
+          {
+            name: "Sofa",
+            rating: 5,
+            newPrice: 260,
+            oldPrice: 310,
+            imageUrl: "assets/images/demos/demo2/products/4-2-1.jpg",
+            newTag: true,
+            discount: 0,
+            reviewsCount: 6,
+          }
+        ];
+
   return (
     <>
         <div className="title-link-wrapper mb-3 appear-animateNOT">
@@ -40,302 +96,11 @@ export default function DealOfTheDay() {
                         }
                     }"
             >
-            <div className="swiper-wrapper row cols-lg-5 cols-md-4 cols-2">
-                {/* <div className="swiper-slide product-wrap">
-                    <div className="product text-center">
-                        <figure className="product-media">
-                        <a href="product-default.html">
-                            <img
-                            src="assets/images/demos/demo2/products/1-1-1.jpg"
-                            alt="Product"
-                            width={300}
-                            height={338}
-                            />
-                            <img
-                            src="assets/images/demos/demo2/products/1-1-2.jpg"
-                            alt="Product"
-                            width={300}
-                            height={338}
-                            />
-                        </a>
-                        <div className="product-action-vertical">
-                            <a
-                            href="#"
-                            className="btn-product-icon btn-cart w-icon-cart"
-                            title="Add to cart"
-                            />
-                            <a
-                            href="#"
-                            className="btn-product-icon btn-wishlist w-icon-heart"
-                            title="Add to wishlist"
-                            />
-                            <a
-                            href="#"
-                            className="btn-product-icon btn-quickview w-icon-search"
-                            title="Quickview"
-                            />
-                            <a
-                            href="#"
-                            className="btn-product-icon btn-compare w-icon-compare"
-                            title="Add to Compare"
-                            />
-                        </div>
-                        <div className="product-label-group">
-                            <label className="product-label label-new">New</label>
-                        </div>
-                        </figure>
-                        <div className="product-details">
-                        <h4 className="product-name">
-                            <a href="product-default.html">Women's Comforter</a>
-                        </h4>
-                        <div className="ratings-container">
-                            <div className="ratings-full">
-                            <span className="ratings" style={{ width: "100%" }} />
-                            <span className="tooltiptext tooltip-top" />
-                            </div>
-                            <a href="product-default.html" className="rating-reviews">
-                            (3 Reviews)
-                            </a>
-                        </div>
-                        <div className="product-price">
-                            <ins className="new-price">$45.62 - $58.28</ins>
-                        </div>
-                        </div>
-                    </div>
-                </div>
-                <div className="swiper-slide product-wrap">
-                    <div className="product text-center">
-                        <figure className="product-media">
-                        <a href="product-default.html">
-                            <img
-                            src="assets/images/demos/demo2/products/1-2.jpg"
-                            alt="Product"
-                            width={300}
-                            height={338}
-                            />
-                        </a>
-                        <div className="product-action-vertical">
-                            <a
-                            href="#"
-                            className="btn-product-icon btn-cart w-icon-cart"
-                            title="Add to cart"
-                            />
-                            <a
-                            href="#"
-                            className="btn-product-icon btn-wishlist w-icon-heart"
-                            title="Add to wishlist"
-                            />
-                            <a
-                            href="#"
-                            className="btn-product-icon btn-quickview w-icon-search"
-                            title="Quickview"
-                            />
-                            <a
-                            href="#"
-                            className="btn-product-icon btn-compare w-icon-compare"
-                            title="Add to Compare"
-                            />
-                        </div>
-                        <div className="product-label-group">
-                            <label className="product-label label-new">New</label>
-                            <label className="product-label label-discount">-35%</label>
-                        </div>
-                        </figure>
-                        <div className="product-details">
-                        <h4 className="product-name">
-                            <a href="product-default.html">White Valise</a>
-                        </h4>
-                        <div className="ratings-container">
-                            <div className="ratings-full">
-                            <span className="ratings" style={{ width: "100%" }} />
-                            <span className="tooltiptext tooltip-top" />
-                            </div>
-                            <a href="product-default.html" className="rating-reviews">
-                            (3 Reviews)
-                            </a>
-                        </div>
-                        <div className="product-price">
-                            <ins className="new-price">$40.00</ins>
-                            <span className="old-price">$49.89</span>
-                        </div>
-                        </div>
-                    </div>
-                </div>
-                <div className="swiper-slide product-wrap">
-                    <div className="product text-center">
-                        <figure className="product-media">
-                        <a href="product-default.html">
-                            <img
-                            src="assets/images/demos/demo2/products/1-3-1.jpg"
-                            alt="Product"
-                            width={300}
-                            height={338}
-                            />
-                            <img
-                            src="assets/images/demos/demo2/products/1-3-2.jpg"
-                            alt="Product"
-                            width={300}
-                            height={338}
-                            />
-                        </a>
-                        <div className="product-action-vertical">
-                            <a
-                            href="#"
-                            className="btn-product-icon btn-cart w-icon-cart"
-                            title="Add to cart"
-                            />
-                            <a
-                            href="#"
-                            className="btn-product-icon btn-wishlist w-icon-heart"
-                            title="Add to wishlist"
-                            />
-                            <a
-                            href="#"
-                            className="btn-product-icon btn-quickview w-icon-search"
-                            title="Quickview"
-                            />
-                            <a
-                            href="#"
-                            className="btn-product-icon btn-compare w-icon-compare"
-                            title="Add to Compare"
-                            />
-                        </div>
-                        </figure>
-                        <div className="product-details">
-                        <h4 className="product-name">
-                            <a href="product-default.html">Brown Leather Shoes</a>
-                        </h4>
-                        <div className="ratings-container">
-                            <div className="ratings-full">
-                            <span className="ratings" style={{ width: "80%" }} />
-                            <span className="tooltiptext tooltip-top" />
-                            </div>
-                            <a href="product-default.html" className="rating-reviews">
-                            (6 Reviews)
-                            </a>
-                        </div>
-                        <div className="product-price">
-                            <ins className="new-price">$36.26 - $59.75</ins>
-                        </div>
-                        </div>
-                    </div>
-                </div>
-                <div className="swiper-slide product-wrap">
-                    <div className="product text-center">
-                        <figure className="product-media">
-                        <a href="product-default.html">
-                            <img
-                            src="assets/images/demos/demo2/products/1-4.jpg"
-                            alt="Product"
-                            width={300}
-                            height={338}
-                            />
-                        </a>
-                        <div className="product-action-vertical">
-                            <a
-                            href="#"
-                            className="btn-product-icon btn-cart w-icon-cart"
-                            title="Add to cart"
-                            />
-                            <a
-                            href="#"
-                            className="btn-product-icon btn-wishlist w-icon-heart"
-                            title="Add to wishlist"
-                            />
-                            <a
-                            href="#"
-                            className="btn-product-icon btn-quickview w-icon-search"
-                            title="Quickview"
-                            />
-                            <a
-                            href="#"
-                            className="btn-product-icon btn-compare w-icon-compare"
-                            title="Add to Compare"
-                            />
-                        </div>
-                        <div className="product-label-group">
-                            <label className="product-label label-new">New</label>
-                        </div>
-                        </figure>
-                        <div className="product-details">
-                        <h4 className="product-name">
-                            <a href="product-default.html">Portable Flashlight</a>
-                        </h4>
-                        <div className="ratings-container">
-                            <div className="ratings-full">
-                            <span className="ratings" style={{ width: "100%" }} />
-                            <span className="tooltiptext tooltip-top" />
-                            </div>
-                            <a href="product-default.html" className="rating-reviews">
-                            (8 Reviews)
-                            </a>
-                        </div>
-                        <div className="product-price">
-                            <ins className="new-price">$10.00</ins>
-                            <del className="old-price">$11.00</del>
-                        </div>
-                        </div>
-                    </div>
-                </div>
-                <div className="swiper-slide product-wrap">
-                    <div className="product text-center">
-                        <figure className="product-media">
-                        <a href="product-default.html">
-                            <img
-                            src="assets/images/demos/demo2/products/1-5.jpg"
-                            alt="Product"
-                            width={300}
-                            height={338}
-                            />
-                        </a>
-                        <div className="product-action-vertical">
-                            <a
-                            href="#"
-                            className="btn-product-icon btn-cart w-icon-cart"
-                            title="Add to cart"
-                            />
-                            <a
-                            href="#"
-                            className="btn-product-icon btn-wishlist w-icon-heart"
-                            title="Add to wishlist"
-                            />
-                            <a
-                            href="#"
-                            className="btn-product-icon btn-quickview w-icon-search"
-                            title="Quickview"
-                            />
-                            <a
-                            href="#"
-                            className="btn-product-icon btn-compare w-icon-compare"
-                            title="Add to Compare"
-                            />
-                        </div>
-                        </figure>
-                        <div className="product-details">
-                        <h4 className="product-name">
-                            <a href="product-default.html">USB Charger</a>
-                        </h4>
-                        <div className="ratings-container">
-                            <div className="ratings-full">
-                            <span className="ratings" style={{ width: "100%" }} />
-                            <span className="tooltiptext tooltip-top" />
-                            </div>
-                            <a href="product-default.html" className="rating-reviews">
-                            (3 Reviews)
-                            </a>
-                        </div>
-                        <div className="product-price">
-                            <ins className="new-price">$17.00</ins>
-                            <del className="old-price">$20.00</del>
-                        </div>
-                        </div>
-                    </div>
-                </div> */}
-                <ProductCard/>
-                <ProductCard/>
-                <ProductCard/>
-                <ProductCard/>
-                <ProductCard/>
+            <div className="swiper-wrapper row cols-lg-5 cols-md-4 cols-2"> 
+                {deals.map((deal)=>{
+                    // console.log('deal is :', deal);
+                    return <ProductCard {...deal} key={deal.name} />
+                })}
             </div>
             <div className="swiper-pagination" />
             </div>
