@@ -40,8 +40,8 @@ export default function Document() {
           <Script src="/assets/vendor/zoom/jquery.zoom.js"></Script>
 
           {/* <!-- Main Js --> */}
-          <Script src="/assets/js/main.min.js"></Script>
           <Script src="/assets/js/custom.js"></Script>
+          <Script src="/assets/js/main.min.js"></Script>
         </div>
       </body>
     </Html>

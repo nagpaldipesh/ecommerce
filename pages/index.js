@@ -1,5 +1,8 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Carousel from './components/Home/Carousel'
+import Features from './components/Home/Features'
+import DealOfTheDay from './components/DealOfTheDay'
 
 export default function Home() {
   return (
@@ -13,7 +16,12 @@ export default function Home() {
         <meta name="description" content="Wolmart is powerful marketplace & ecommerce responsive Html5 Template." />
         <meta name="author" content="D-THEMES" />
       </Head>
-      <h2>Hi Howdy</h2>
+        <Carousel/>
+      <div className="container">
+        <Features/>
+        <DealOfTheDay/>
+        <h2>Hi Howdy</h2>
+      </div>
     </>
   )
 }

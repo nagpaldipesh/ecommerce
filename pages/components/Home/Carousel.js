@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function App() {
+export default function Carousel() {
   return (
       <div className="intro-section">
         <div

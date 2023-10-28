@@ -1,11 +1,8 @@
 import React from 'react';
 
 export default function Features() {
-
-    
-
   return (
-    <div className='swiper-wrapper row cols-md-4 cols-sm-3 cols-1 mt-4 mb-4'>
+    <div className='swiper-wrapper row cols-md-4 cols-sm-3 cols-1 mt-10 mb-10'>
         <div className="swiper-slide icon-box icon-box-side text-dark">
             <span className="icon-box-icon icon-shipping">
             <i className="w-icon-truck" />

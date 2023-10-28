@@ -9,8 +9,6 @@ export default function Layout({children}) {
   return (
     <>
       <Header/>
-      <Carousel/>
-      {/* <Features/> */}
         {children}
       <Footer/>
       <ScrollTop/>
