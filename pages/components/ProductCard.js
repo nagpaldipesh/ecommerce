@@ -1,10 +1,10 @@
 import React from "react";
-// {name,rating,newPrice,oldPrice,imageUrl,imageUrl2,newTag,discount,reviewsCount}
+// {name,rating,newPrice,oldPrice,imageUrl,imageUrl2,newTag,discount,reviewsCount,extraClass}
 export default function ProductCard(props) {
     const product = {...props};
 
   return (
-    <div className="swiper-slide product-wrap">
+    <div className={`swiper-slide product-wrap ${product.extraClass}`}>
       <div className="product text-center">
         <figure className="product-media">
           <a href="product-default.html">
@@ -64,7 +64,7 @@ export default function ProductCard(props) {
                 className="ratings"
                 style={{ width: `${product.rating * 20}%` }}
               />
-              <span className="tooltiptext tooltip-top" />
+              <span className="tooltiptext tooltip-top">{product.rating}</span>
             </div>
             {product.reviewsCount >= 0 && (
               <a href="product-default.html" className="rating-reviews">

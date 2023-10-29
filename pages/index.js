@@ -2,7 +2,11 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Carousel from './components/Home/Carousel'
 import Features from './components/Home/Features'
-import DealOfTheDay from './components/DealOfTheDay'
+import DealOfTheDay from './components/Home/DealOfTheDay'
+import AdBanner from './components/Home/AdBanner'
+import TopWeeklyVendors from './components/Home/TopWeeklyVendors'
+import ConsumerElectronics from './components/Home/ConsumerElectronics'
+import ThinBanner from './components/Home/ThinBanner'
 
 export default function Home() {
   return (
@@ -20,7 +24,12 @@ export default function Home() {
       <div className="container">
         <Features/>
         <DealOfTheDay/>
+        <AdBanner/>
+        <TopWeeklyVendors/>
+        <ConsumerElectronics/>
+        <ThinBanner/>
         <h2>Hi Howdy</h2>
+        
       </div>
     </>
   )
