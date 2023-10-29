@@ -22,26 +22,27 @@ export default function Document() {
         <link rel="stylesheet" href="/assets/vendor/swiper/swiper-bundle.min.css" />
         {/* Default CSS */}
         <link rel="stylesheet" type="text/css" href="/assets/css/demo2.min.css" />
+
+        
+            <Script strategy='beforeInteractive' src="assets/vendor/jquery/jquery.min.js"></Script>
+            <Script src="assets/vendor/jquery.plugin/jquery.plugin.min.js"></Script>
+            <Script src="assets/js/email-decode.min.js"></Script>
+            <Script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></Script>
+            <Script src="assets/vendor/swiper/swiper-bundle.min.js"></Script>
+            <Script src="assets/vendor/jquery.countdown/jquery.countdown.min.js"></Script>
+            <Script src="assets/vendor/magnific-popup/jquery.magnific-popup.min.js"></Script>
+            <Script src="assets/vendor/floating-parallax/parallax.min.js"></Script>
+            <Script src="assets/vendor/zoom/jquery.zoom.js"></Script>
+
+            <Script src="assets/js/custom.js"></Script>
+            <Script src="assets/js/main.min.js"></Script>
+        
       </Head>
       <body className="home">
         <div class="page-wrapper">
           <Main />
           <NextScript />
-
-          {/* <!-- Plugin JS File --> */}
-          <Script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></Script>
-          <Script src="/assets/vendor/jquery/jquery.min.js"></Script>
-          <Script src="/assets/vendor/jquery.plugin/jquery.plugin.min.js"></Script>
-          <Script src="/assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></Script>
-          <Script src="/assets/vendor/swiper/swiper-bundle.min.js"></Script>
-          <Script src="/assets/vendor/jquery.countdown/jquery.countdown.min.js"></Script>
-          <Script src="/assets/vendor/magnific-popup/jquery.magnific-popup.min.js"></Script>
-          <Script src="/assets/vendor/floating-parallax/parallax.min.js"></Script>
-          <Script src="/assets/vendor/zoom/jquery.zoom.js"></Script>
-
-          {/* <!-- Main Js --> */}
-          <Script src="/assets/js/custom.js"></Script>
-          <Script src="/assets/js/main.min.js"></Script>
+            
         </div>
       </body>
     </Html>

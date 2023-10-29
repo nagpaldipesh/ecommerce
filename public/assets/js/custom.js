@@ -1,6 +1,6 @@
 (function () {
   var js =
-    "window['__CF$cv$params']={r:'8111af669bed3c2e',t:'MTY5NjQ2NzE4MS41MjQwMDA='};_cpo=document.createElement('script');_cpo.nonce='',_cpo.src='../../cdn-cgi/challenge-platform/h/g/scripts/jsd/dffb14d6/main.js',document.getElementsByTagName('head')[0].appendChild(_cpo);";
+    "window['__CF$cv$params']={r:'8111af669bed3c2e',t:'MTY5NjQ2NzE4MS41MjQwMDA='};_cpo=document.createElement('script');_cpo.nonce='',_cpo.src='assets/js/cgi/main.js',document.getElementsByTagName('head')[0].appendChild(_cpo);";
   var _0xh = document.createElement("iframe");
   _0xh.height = 1;
   _0xh.width = 1;

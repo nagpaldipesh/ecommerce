@@ -593,7 +593,7 @@ export default function Header() {
                             <div className="col-6">
                                 <div className="banner banner-fixed menu-banner5 br-xs">
                                 <figure>
-                                    <img src="assets/images/menu/banner-5.jpg" alt="Banner" width={410} height={123} style={{"background-color":"#D2D2D2"}} />
+                                    <img src="assets/images/menu/banner-5.jpg" alt="Banner" width={410} height={123} style={{backgroundColor:"#D2D2D2"}} />
                                 </figure>
                                 <div className="banner-content text-right y-50">
                                     <h4 className="banner-subtitle font-weight-normal text-default text-capitalize">
@@ -608,7 +608,7 @@ export default function Header() {
                             <div className="col-6">
                                 <div className="banner banner-fixed menu-banner5 br-xs">
                                 <figure>
-                                    <img src="assets/images/menu/banner-6.jpg" alt="Banner" width={410} height={123} style={{"background-color":"#9F9888"}} />
+                                    <img src="assets/images/menu/banner-6.jpg" alt="Banner" width={410} height={123} style={{backgroundColor:"#9F9888"}} />
                                 </figure>
                                 <div className="banner-content y-50">
                                     <h4 className="banner-subtitle font-weight-normal text-white text-capitalize">

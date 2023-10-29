@@ -9,11 +9,12 @@ import ConsumerElectronics from './components/Home/ConsumerElectronics'
 import ThinBanner from './components/Home/ThinBanner'
 
 export default function Home() {
+ 
   return (
     <>
       <Head>
-      <title>E-Commerce</title>
-      <meta charSet="UTF-8" />
+        <title>E-Commerce</title>
+        <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
         
         <meta name="keywords" content="Marketplace ecommerce responsive HTML5 Template" />

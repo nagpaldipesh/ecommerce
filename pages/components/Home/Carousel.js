@@ -1,7 +1,9 @@
+'use client';
 import React from 'react';
 
 export default function Carousel() {
   return (
+    <div className='main'>
       <div className="intro-section">
         <div
           className="swiper-container swiper-theme nav-inner pg-inner animation-slider pg-xxl-hide pg-show nav-xxl-show nav-hide"
@@ -23,7 +25,7 @@ export default function Carousel() {
             >
               <div className="container">
                 <figure
-                  className="slide-image floating-item slide-animateNOT"
+                  className="slide-image floating-item slide-animate"
                   data-animation-options="{
                                     'name': 'fadeInDownShorter', 'duration': '1s'
                                 }"
@@ -39,7 +41,7 @@ export default function Carousel() {
                 </figure>
                 <div className="banner-content text-right y-50 ml-auto">
                   <h5
-                    className="banner-subtitle text-uppercase font-weight-bold mb-2 slide-animateNOT"
+                    className="banner-subtitle text-uppercase font-weight-bold mb-2 slide-animate"
                     data-animation-options="{
                                         'name': 'fadeInUpShorter', 'duration': '1s'
                                     }"
@@ -47,7 +49,7 @@ export default function Carousel() {
                     Deals And Promotions
                   </h5>
                   <h3
-                    className="banner-title ls-25 mb-6 slide-animateNOT"
+                    className="banner-title ls-25 mb-6 slide-animate"
                     data-animation-options="{
                                         'name': 'fadeInUpShorter', 'duration': '1s'
                                     }"
@@ -57,7 +59,7 @@ export default function Carousel() {
                   </h3>
                   <a
                     href="shop-banner-sidebar.html"
-                    className="btn btn-dark btn-outline btn-rounded btn-icon-right slide-animateNOT"
+                    className="btn btn-dark btn-outline btn-rounded btn-icon-right slide-animate"
                     data-animation-options="{
                                         'name': 'fadeInUpShorter', 'duration': '1s'
                                     }"
@@ -80,7 +82,7 @@ export default function Carousel() {
             >
               <div className="container">
                 <figure
-                  className="slide-image floating-item slide-animateNOT"
+                  className="slide-image floating-item slide-animate"
                   data-animation-options="{
                                     'name': 'fadeInUpShorter', 'duration': '1s'
                                 }"
@@ -96,7 +98,7 @@ export default function Carousel() {
                 </figure>
                 <div className="banner-content y-50">
                   <h5
-                    className="banner-subtitle text-uppercase font-weight-bold mb-2 slide-animateNOT"
+                    className="banner-subtitle text-uppercase font-weight-bold mb-2 slide-animate"
                     data-animation-options="{
                                         'name': 'fadeInRightShorter', 'duration': '1s', 'delay': '.5s'
                                     }"
@@ -104,7 +106,7 @@ export default function Carousel() {
                     News And Inspiration
                   </h5>
                   <h3
-                    className="banner-title ls-25 mb-2 text-uppercase lh-1 slide-animateNOT"
+                    className="banner-title ls-25 mb-2 text-uppercase lh-1 slide-animate"
                     data-animation-options="{
                                         'name': 'fadeInRightShorter', 'duration': '1s', 'delay': '.7s'
                                     }"
@@ -112,7 +114,7 @@ export default function Carousel() {
                     Natural Sound
                   </h3>
                   <div
-                    className="banner-price-info font-weight-bold text-dark ls-25 slide-animateNOT"
+                    className="banner-price-info font-weight-bold text-dark ls-25 slide-animate"
                     data-animation-options="{
                                         'name': 'fadeInRightShorter', 'duration': '1s', 'delay': '.9s'
                                     }"
@@ -123,7 +125,7 @@ export default function Carousel() {
                     </span>
                   </div>
                   <p
-                    className="font-weight-normal text-default ls-25 slide-animateNOT"
+                    className="font-weight-normal text-default ls-25 slide-animate"
                     data-animation-options="{
                                         'name': 'fadeInRightShorter', 'duration': '1s', 'delay': '1.1s'
                                     }"
@@ -132,7 +134,7 @@ export default function Carousel() {
                   </p>
                   <a
                     href="shop-banner-sidebar.html"
-                    className="btn btn-dark btn-outline btn-rounded btn-icon-right slide-animateNOT"
+                    className="btn btn-dark btn-outline btn-rounded btn-icon-right slide-animate"
                     data-animation-options="{
                                         'name': 'fadeInRightShorter', 'duration': '1s', 'delay': '1.3s'
                                     }"
@@ -155,7 +157,7 @@ export default function Carousel() {
             >
               <div className="container">
                 <figure
-                  className="slide-image floating-item slide-animateNOT"
+                  className="slide-image floating-item slide-animate"
                   data-animation-options="{
                                     'name': 'fadeInRightShorter', 'duration': '1s'
                                 }"
@@ -171,7 +173,7 @@ export default function Carousel() {
                 </figure>
                 <div className="banner-content y-50">
                   <h5
-                    className="banner-subtitle text-uppercase font-weight-bold slide-animateNOT"
+                    className="banner-subtitle text-uppercase font-weight-bold slide-animate"
                     data-animation-options="{
                                         'name': 'fadeInRightShorter', 'duration': '1s'
                                     }"
@@ -179,7 +181,7 @@ export default function Carousel() {
                     Top Monthly Seller
                   </h5>
                   <h4
-                    className="banner-title ls-25 slide-animateNOT"
+                    className="banner-title ls-25 slide-animate"
                     data-animation-options="{
                                         'name': 'fadeInRightShorter', 'duration': '1s'
                                     }"
@@ -188,7 +190,7 @@ export default function Carousel() {
                     <span className="text-primary">Smart LED</span> TV
                   </h4>
                   <p
-                    className="font-weight-normal text-dark slide-animateNOT"
+                    className="font-weight-normal text-dark slide-animate"
                     data-animation-options="{
                                         'name': 'fadeInRightShorter', 'duration': '1s'
                                     }"
@@ -197,7 +199,7 @@ export default function Carousel() {
                   </p>
                   <a
                     href="shop-banner-sidebar.html"
-                    className="btn btn-dark btn-outline btn-rounded btn-icon-right slide-animateNOT"
+                    className="btn btn-dark btn-outline btn-rounded btn-icon-right slide-animate"
                     data-animation-options="{
                                         'name': 'fadeInRightShorter', 'duration': '1s'
                                     }"
@@ -216,6 +218,7 @@ export default function Carousel() {
           <button className="swiper-button-next" />
           <button className="swiper-button-prev" />
         </div>
+      </div>
       </div>
   );
 }
